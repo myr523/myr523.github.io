@@ -1,13 +1,14 @@
 {
   "name": "myr523",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "My Profile site",
   "main": "./dist/index.html",
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server --progress --colors --inline --watch",
     "lint": "eslint --ext=jsx --ext=js .",
-    "test": "cross-env NODE_ENV=test NODE_PATH=src:test mocha"
+    "test": "cross-env NODE_ENV=test NODE_PATH=src:test mocha",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "dependencies": {
@@ -38,6 +39,7 @@
     "eslint-import-resolver-node": "^0.3.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-react": "^7.0.1",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.28.0",
     "mocha": "^3.4.2",
     "react-hot-loader": "^3.0.0-beta.7",
@@ -48,5 +50,6 @@
   "directories": {
     "test": "test"
   },
-  "author": ""
+  "author": "myr523",
+  "homepage": "https://myr523.github.io"
 }
