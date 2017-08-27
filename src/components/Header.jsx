@@ -5,7 +5,7 @@ import Navigation from './Navigation.jsx'
 const Header = () => {
   return(
     <header className={ 'header' }>
-      <h1>myr523</h1>
+      <h1>Ryusei Harada</h1>
       <Navigation />
     </header>
   )

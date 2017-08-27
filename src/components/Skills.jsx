@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div>
       <h2>Skills</h2>
-      { 'This is Skills page' }
+      { 'This is Skills page. Under construction...' }
     </div>
   )
 }

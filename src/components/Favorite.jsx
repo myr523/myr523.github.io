@@ -4,23 +4,20 @@ const Favorite = () => {
   return (
     <div>
       <h2>Favorite</h2>
-      { 'This is Favorite page.' }
-      {/*
-      <ui>
+      <ul>
         <li>{ 'Programming' }</li>
-        <li>{ '' }</li>
+        <li>{ 'Traveling' }</li>
         <li>{ 'Photograph' }</li>
-        <li>{ 'Live' }</li>
+        <li>{ 'Music => Idol, Band' }</li>
         <li>{ 'HimeKyunFruitCan => ' }
           <a
             href={ 'http://himekyun.jp/' }
             target="_blank"
           >
             { 'Official website' }
-           </a>
+          </a>
         </li>
-      </ui>
-      */}
+      </ul>
     </div>
   )
 }
