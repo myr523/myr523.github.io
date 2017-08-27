@@ -13,14 +13,6 @@ const Link = () => {
           >{ 'myr523' }
         </a>
         </li>
-        <li>
-          { 'Twitter => ' }
-          <a
-            href={ 'https://twitter.com/myr523' }
-            target="_blank"
-          >{ 'myr523' }
-        </a>
-        </li>
         <li>{ 'Mail => ' }
           { 'pg.stgstar (at) gmail.com' }
         </li>
