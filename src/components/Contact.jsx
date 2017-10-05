@@ -7,14 +7,12 @@ const Link = () => {
       <ul>
         <li>
           { 'GitHub => ' }
-          <a
-            href={ 'https://github.com/myr523' }
-            target="_blank"
-          >{ 'myr523' }
-        </a>
-
+          <a href={ 'https://github.com/myr523' } target="_blank">
+            { 'myr523' }
+          </a>
         </li>
-        <li>{ 'Mail => ' }
+        <li>
+          { 'Mail   => ' }
           { 'pg.stgstar (at) gmail.com' }
         </li>
       </ul>
