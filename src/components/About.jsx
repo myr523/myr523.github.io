@@ -6,7 +6,7 @@ const About = () => {
       <h2>{ 'About' }</h2>
       <dl>
         <dt>{ 'who am i' }</dt>
-        <dd>{ 'Student, Department of Computer Science, Ritsumeikan University' }</dd>
+        <dd>{ 'Student, Department of Computer Science' }</dd>
       </dl>
     </div>
   )
