@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer style={ styles }>
-      <p><small>{ 'Made by React.js' }</small></p>
+      <p><small>{ '' }</small></p>
     </footer>
   )
 }
