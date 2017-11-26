@@ -17,7 +17,7 @@ const Skills = () => {
         <ul>
           <li>{ 'Python' }</li>
           <li>{ 'Golang' }</li>
-          <li>{ 'React.js' }</li>
+          <li>{ 'React' }</li>
         </ul>
       </p>
     </div>
