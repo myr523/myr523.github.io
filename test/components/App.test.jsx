@@ -1,7 +1,7 @@
 import React from 'react'
 import { expect } from 'chai'
 import { shallow } from 'enzyme'
-import App from 'components/App'
+import App from 'routes/index'
 
 describe('<App />', () => {
   it('should render single <h1>', () => {
