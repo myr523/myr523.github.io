@@ -9,14 +9,6 @@ const Favorite = () => {
         <li>{ 'Traveling' }</li>
         <li>{ 'Photograph' }</li>
         <li>{ 'Music => Idol, Band' }</li>
-        <li>{ 'HimeKyunFruitCan => ' }
-          <a
-            href={ 'http://himekyun.jp/' }
-            target="_blank"
-          >
-            { 'Official website' }
-          </a>
-        </li>
       </ul>
     </div>
   )
