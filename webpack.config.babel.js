@@ -9,7 +9,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 const __NODE_ENV__ = JSON.stringify(process.env.NODE_ENV) || 'development'
 
-const mainEntry = ['.src/main.jsx']
+const mainEntry = ['./src/main.jsx']
 const devEntry = [
   'react-hot-loader/patch',
   // activate HMR for React
@@ -23,7 +23,7 @@ const devEntry = [
   // only- means to only hot reload for successful updates
 ]
 
-export default {
+module.exports = {
 
   entry: __NODE_ENV__ === 'development' ? mainEntry.concat(devEntry) : mainEntry,
 
@@ -33,7 +33,7 @@ export default {
     filename: 'bundle.js'
   },
 
-  devtool: 'source-map',
+  devtool: __NODE_ENV__ === 'development' ? 'source-map' : '',
 
   resolve: {
     modules: [
