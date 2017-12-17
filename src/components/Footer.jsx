@@ -8,7 +8,7 @@ const Footer = () => {
   }
 
   return (
-    <footer style={ styles }>
+    <footer id={ 'Footer' } style={ styles }>
       <p><small>{ '' }</small></p>
     </footer>
   )
