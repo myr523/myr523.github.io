@@ -1,12 +1,10 @@
 import React from 'react'
-import Navigation from './Navigation.jsx'
 
 
 const Header = () => {
   return(
-    <header id={ 'Header' } className={ 'header' }>
-      <h1>Ryusei Harada</h1>
-      <Navigation />
+    <header id={ 'Header' } className={ 'Header' }>
+      <h1 className={ 'name' }>Ryusei Harada</h1>
     </header>
   )
 }
