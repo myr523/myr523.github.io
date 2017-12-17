@@ -7,12 +7,14 @@ import Favorite from '../components/Favorite.jsx'
 import Skills from '../components/Skills.jsx'
 import Links from '../components/Links.jsx'
 import Footer from '../components/Footer.jsx'
+import Navigation from '../components/Navigation'
 
 const Routes = () => {
   return (
     <Router>
       <Route>
         <div>
+          <Navigation />
           <Header />
           <main className={ 'container' }>
             <Route path={ '/' } component={ Home } exact />
