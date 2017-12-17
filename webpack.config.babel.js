@@ -50,9 +50,21 @@ module.exports = {
         use: [{ loader: 'babel-loader?compact=false' }]
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
+        test: /\.(scss|css)$/,
+        use: [
+          { loader: 'style-loader' }, // creates style nodes from JS strings
+          { loader: 'css-loader' }, // translates CSS into CommonJS
+          { loader: 'sass-loader' }, // compiles Sass to CSS
+        ],
+      },
+      {
+        test: /\.(ttf|eot|svg|png|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
 
   },
