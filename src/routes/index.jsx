@@ -5,7 +5,7 @@ import Home from '../components/Home.jsx'
 import About from '../components/About.jsx'
 import Favorite from '../components/Favorite.jsx'
 import Skills from '../components/Skills.jsx'
-import Contact from '../components/Contact.jsx'
+import Links from '../components/Links.jsx'
 import Footer from '../components/Footer.jsx'
 
 const Routes = () => {
@@ -19,7 +19,7 @@ const Routes = () => {
             <Route path={ '/about' } component={ About } exact />
             <Route path={ '/skills' } component={ Skills } exact />
             <Route path={ '/favorite' } component={ Favorite } exact />
-            <Route path={ '/contact' } component={ Contact } exact />
+            <Route path={ '/links' } component={ Links } exact />
           </main>
           <Footer />
         </div>
