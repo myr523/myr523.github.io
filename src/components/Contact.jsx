@@ -7,7 +7,7 @@ const Contact = () => {
       <ul>
         <li>
           { 'Blog => ' }
-          <a href={ 'myr523.hatenablog.com' } target="_blank">
+          <a href={ 'http://myr523.hatenablog.com/' } target="_blank">
             { 'http://myr523.hatenablog.com/' }
           </a>
         </li>
