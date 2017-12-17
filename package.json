@@ -4,8 +4,8 @@
   "description": "My Profile site",
   "main": "./dist/index.html",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server --progress --colors --inline --watch",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "start": "cross-env NODE_ENV=developments webpack-dev-server --progress --colors --inline --watch",
     "lint": "eslint --ext=jsx --ext=js .",
     "test": "cross-env NODE_ENV=test NODE_PATH=src:test mocha",
     "deploy": "gh-pages -d dist"
