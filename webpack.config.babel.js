@@ -7,23 +7,25 @@ import path              from 'path'
 import webpack           from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
+const __NODE_ENV__ = JSON.stringify(process.env.NODE_ENV) || 'development'
+
+const mainEntry = ['.src/main.jsx']
+const devEntry = [
+  'react-hot-loader/patch',
+  // activate HMR for React
+
+  'webpack-dev-server/client?http://localhost:3030',
+  // bundle the client for webpack-dev-server
+  // and connect to the provided endpoint
+
+  'webpack/hot/only-dev-server',
+  // bundle the client for hot reloading
+  // only- means to only hot reload for successful updates
+]
+
 export default {
 
-  entry: [
-    'react-hot-loader/patch',
-    // activate HMR for React
-
-    'webpack-dev-server/client?http://localhost:3030',
-    // bundle the client for webpack-dev-server
-    // and connect to the provided endpoint
-
-    'webpack/hot/only-dev-server',
-    // bundle the client for hot reloading
-    // only- means to only hot reload for successful updates
-
-    './src/main.jsx',
-    // the entry point of our app
-  ],
+  entry: __NODE_ENV__ === 'development' ? mainEntry.concat(devEntry) : mainEntry,
 
   output: {
     path: path.join(__dirname, '/dist/'),
