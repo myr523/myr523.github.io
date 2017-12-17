@@ -1,0 +1,54 @@
+@import './mixins.scss';
+@import './normalize.scss';
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+
+html {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  // margin-right: auto;
+  // margin-left: auto;
+}
+
+body {
+  background: #f6f6f7;
+  box-sizing: border-box;
+  color: #333;
+  font-family: 'Source Code Pro';
+}
+
+.container {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em 1em 1em 1em;
+}
+
+
+.flex {
+  display: inline;
+  padding: 1em 2em;
+  // letter-spacing: 0.225em;
+}
+
+.Navigation {
+  display: flex;
+  padding: 1em 1em 1em 1em;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;     /*上下中央揃え*/
+}
+
+.Header {
+  display: inline !important ;
+  text-align: center !important ;
+}
+
+.name {
+  letter-spacing: 0.125em;
+}
+
+.skills {
+  .skills-prop {
+
+  }
+}
