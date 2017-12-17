@@ -16,7 +16,7 @@ const Navigation = () => {
         <li style={ styles.flex }><Link to={ '/about' }>{ 'About' }</Link></li>
         <li style={ styles.flex }><Link to={ '/skills' }>{ 'Skills' }</Link></li>
         <li style={ styles.flex }><Link to={ '/favorite' }>{ 'Favorite' }</Link></li>
-        <li style={ styles.flex }><Link to={ '/contact' }>{ 'Contact' }</Link></li>
+        <li style={ styles.flex }><Link to={ '/links' }>{ 'Links' }</Link></li>
       </ul>
     </nav>
   )

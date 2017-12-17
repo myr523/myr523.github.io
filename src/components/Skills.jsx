@@ -18,6 +18,7 @@ const Skills = () => {
           <li>{ 'Python' }</li>
           <li>{ 'Golang' }</li>
           <li>{ 'React' }</li>
+          <li>{ 'Network Security' }</li>
         </ul>
       </p>
     </div>
