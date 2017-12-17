@@ -19,7 +19,7 @@ const devEntry = [
   // and connect to the provided endpoint
 
   'webpack/hot/only-dev-server',
-  // bundle the client for hot reloading
+  // bundle the cliFnt for hot reloading
   // only- means to only hot reload for successful updates
 ]
 
@@ -29,11 +29,11 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, '/dist/'),
-    publicPath: '',
+    publicPath: '/',
     filename: 'bundle.js'
   },
 
-  devtool: __NODE_ENV__ === 'development' ? 'source-map' : '',
+  devtool: __NODE_ENV__ === 'development' ? 'source-map' : void 0,
 
   resolve: {
     modules: [
