@@ -1,15 +1,9 @@
 import React from 'react'
 
 const Footer = () => {
-  const styles = {
-    bottom: 0,
-    height: '5em',
-    position: 'absolute',
-  }
-
   return (
-    <footer id={ 'Footer' } style={ styles }>
-      <p><small>{ '' }</small></p>
+    <footer id={ 'Footer' } className={ 'Footer' }>
+      <p><small>{ '(c)myr523.net' }</small></p>
     </footer>
   )
 }
