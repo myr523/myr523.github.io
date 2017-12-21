@@ -1,54 +1,132 @@
-@import './mixins.scss';
-@import './normalize.scss';
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
-
-html {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 800px;
-  // margin-right: auto;
-  // margin-left: auto;
-}
+@import "./mixins.scss";
+@import "./normalize.scss";
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
 
 body {
   background: #f6f6f7;
   box-sizing: border-box;
   color: #333;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
-
-.container {
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1em 1em 1em 1em;
-}
-
-
-.flex {
-  display: inline;
-  padding: 1em 2em;
-  // letter-spacing: 0.225em;
-}
-
-.Navigation {
-  display: flex;
-  padding: 1em 1em 1em 1em;
-  justify-content: center; /*左右中央揃え*/
-  align-items: center;     /*上下中央揃え*/
-}
-
 .Header {
-  display: inline !important ;
-  text-align: center !important ;
+  display: inline !important;
+  text-align: center !important;
 }
-
 .name {
   letter-spacing: 0.125em;
 }
+.Footer {
+  //bottom: 0;
+  display: flex;
+  height: 5em;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center; /*上下中央揃え*/
+}
 
-.skills {
-  .skills-prop {
+@media screen and (min-width: 700px) {
+  html {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 700px;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+  .Navigation {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center; /*上下中央揃え*/
+    font-size: 12px;
+  }
+  .flex {
+    display: inline;
+    padding: 1em 2em;
+    // letter-spacing: 0.225em;
+  }
+  .container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em 1em 1em 1em;
+  }
+  .flex {
+    display: inline;
+    padding: 1em 2em;
+    // letter-spacing: 0.225em;
+  }
+  .Navigation {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center; /*上下中央揃え*/
+    font-size: 18px;
+  }
+}
 
+@media screen and (min-width: 501px) and (max-width: 699px) {
+  html {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+  .Navigation {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center; /*上下中央揃え*/
+    font-size: 12px;
+  }
+  .flex {
+    display: inline;
+    padding: 1em 2em;
+    // letter-spacing: 0.225em;
+  }
+  .container {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em 1em 1em 1em;
+  }
+  .flex {
+    display: inline;
+    padding: 1em 1em;
+    // letter-spacing: 0.225em;
+  }
+  .Navigation {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center; /*上下中央揃え*/
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 320px;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+  .container {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em 1em 1em 1em;
+  }
+  .flex {
+    display: inline;
+    padding: 1em 0.5em;
+    // letter-spacing: 0.225em;
+  }
+  .Navigation {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center; /*上下中央揃え*/
+    font-size: 14px;
   }
 }
