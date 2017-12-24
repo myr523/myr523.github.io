@@ -11,8 +11,11 @@ body {
   display: inline !important;
   text-align: center !important;
 }
-div#Header {
+div #Header {
     text-align: center;
+}
+img.image-header{
+  padding-left: 45px;
 }
 .name {
   letter-spacing: 0.125em;

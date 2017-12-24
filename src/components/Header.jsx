@@ -6,8 +6,7 @@ const Header = () => {
     <div id={ 'Header' }>
       <img
         className={ 'image-header' }
-        src={ 'src/styles/assets/s512_xmas_santa_cap1_8.png' }
-        width="100"
+        src={ 'https://raw.githubusercontent.com/myr523/myr523.github.io/develop/src/styles/assets/s512_xmas_santa_cap1_8.png' }
         height="100"
       />
       <header className={ 'Header' }>
