@@ -13,7 +13,7 @@ env:
   global:
     - DEPLOY_BRANCH="develop"
     - SOURCE_DIR="dist"
-    - TARGET_BRANCH="gh-pages"
+    - TARGET_BRANCH="master"
     - SSH_KEY="deploy_key"
     - GIT_NAME="travis"
     - GIT_EMAIL="deploy@travis-ci.org"
