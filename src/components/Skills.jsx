@@ -2,18 +2,14 @@ import React from 'react'
 
 const Skills = () => {
   const skillList = [
-    'JavaScript',
-    'Clang',
-    'PHP',
-    'Linux'
-  ]
-  const studyingList = [
-    'Python',
     'Golang',
     'React',
-    'Network Security',
-    'HTML/CSS'
+    'Python',
+    'C',
+    'AWS',
+    'Linux',
   ]
+  const studyingList = []
 
   return (
     <div id={ 'Skills' } className={ 'Skills' }>

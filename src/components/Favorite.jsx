@@ -8,7 +8,7 @@ const Favorite = () => {
     'Photograph',
     'Music => Idol, Band',
   ]
-  // TODO: 写真の紹介
+
   return (
     <div id={ 'Favorite' } className={ 'Favorite' }>
       <dl>
