@@ -9,7 +9,11 @@ const Skills = () => {
     'AWS',
     'Linux',
   ]
-  const studyingList = []
+  const studyingList = [
+    'Linux kernel',
+    'Web design',
+    'Database design'
+  ]
 
   return (
     <div id={ 'Skills' } className={ 'Skills' }>
@@ -24,7 +28,6 @@ const Skills = () => {
           )})
       }
       </ul>
-
       <h2 className={ 'studying-parent' }>Studying</h2>
       <ul>
       {
