@@ -8,7 +8,8 @@
     "start": "cross-env NODE_ENV=developments webpack-dev-server --progress --colors --inline --watch",
     "lint": "eslint --ext=jsx --ext=js .",
     "test": "cross-env NODE_ENV=test NODE_PATH=src:test mocha",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "gh-pages-travis": "gh-pages-travis"
   },
   "license": "MIT",
   "dependencies": {
@@ -48,6 +49,7 @@
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "0.0.5-beta.2",
     "gh-pages": "^1.0.0",
+    "gh-pages-travis": "^1.0.4",
     "html-webpack-plugin": "^2.28.0",
     "less-loader": "^4.0.5",
     "mocha": "^3.4.2",

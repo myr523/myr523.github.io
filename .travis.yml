@@ -5,9 +5,31 @@ language: node_js
 node_js:
   - '8'
 
+branches:
+  except:
+    - gh-pages
+
+env:
+  global:
+    - DEPLOY_BRANCH="develop"
+    - SOURCE_DIR="dist"
+    - TARGET_BRANCH="gh-pages"
+    - SSH_KEY="deploy_key"
+    - GIT_NAME="travis"
+    - GIT_EMAIL="deploy@travis-ci.org"
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_fd16243b84f4_key -iv $encrypted_fd16243b84f4_iv -in deploy_key.enc -out ~\/.ssh/deploy_key -d
+  - chmod 600 deploy_key
+  - eval `ssh-agent -s`
+  - ssh-add deploy_key
+
 before_script:
   - npm run build
 
 script:
   - npm run lint
   - npm test
+
+after_success:
+  - npm run gh-pages-travis
